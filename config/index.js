@@ -1,6 +1,6 @@
 'use strict';
 const express = require('express');
-var router = express.Router();
+var router = express.Router({strict:true});
 const expressWs = require("express-ws")(router);
 
 const path = require('path');
@@ -58,6 +58,10 @@ router.use((req, res, next) => {
 });
 
 router.get("/", (req, res) => {
+    if(!req.originalUrl.endsWith("/")){
+        res.redirect(req.originalUrl+"/");
+        return;
+    }
     res.sendFile("./static/config.html", { root: module.path });
 });
 
