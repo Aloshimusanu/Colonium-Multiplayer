@@ -135,6 +135,7 @@ if (port.external != "none") {
       port.external = info.external;
       console.log(info);
       console.log("Full external address: ", "http://" + ExternalData.ip + ":" + port.external);
+      console.log("Config address: ", "http://localhost:" + port.internal + "/config/");
     });
   }
   setInterval(PortMap, 900 * 1000);
