@@ -3,6 +3,7 @@ var tickTime = 500;//time in ms each tick takes
 var Sandbox = false;
 
 var GameSize = 10;
+
 //used to display win message
 const colormap = ["Red", "Blue", "Green", "Purple"]
 
