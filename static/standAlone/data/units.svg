@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <radialGradient id="gradient-2-0" gradientUnits="userSpaceOnUse" cx="250" cy="250" r="248" spreadMethod="pad" xlink:href="#gradient-2"/>
+    <linearGradient id="gradient-2" bx:pinned="true">
+      <stop offset="0.807" style="stop-color: rgb(255, 255, 255);"/>
+      <stop offset="1" style="stop-color: rgb(226, 226, 226);"/>
+    </linearGradient>
+    <radialGradient id="gradient-0-0" gradientUnits="userSpaceOnUse" cx="250" cy="250.907" r="209" spreadMethod="pad" gradientTransform="matrix(1.008221, -0.00274, 0.002717, 0.999996, -2.73725, 0.686021)" xlink:href="#gradient-0"/>
+    <linearGradient id="gradient-0">
+      <stop offset="0.967" style="stop-color: rgb(255, 255, 255);"/>
+      <stop offset="1" style="stop-color: rgb(160, 160, 160);"/>
+    </linearGradient>
+  </defs>
+  <circle style="paint-order: stroke; stroke: rgb(0, 0, 0); fill: url(#gradient-2-0);" cx="250" cy="250" r="248"/>
+  <circle style="fill: rgb(255, 255, 255); paint-order: stroke; stroke: rgb(0, 0, 0);" cx="250" cy="250" r="209"/>
+  <path d="M 459 250 C 459 273.243 455.206 295.599 448.203 316.484 C 451.992 300.944 454 284.707 454 268 C 454 155.334 362.666 64 250 64 C 137.334 64 46 155.334 46 268 C 46 284.706 48.008 300.943 51.796 316.483 C 44.794 295.599 41 273.242 41 250 C 41 134.573 134.573 41 250 41 C 275.391 41 299.724 45.528 322.237 53.82 C 402.067 83.224 459 159.964 459 250 Z" style="paint-order: stroke; fill: url(#gradient-0-0);"/>
+</svg>
