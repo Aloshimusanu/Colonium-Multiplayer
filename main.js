@@ -6,7 +6,7 @@ const expressWs = require("express-ws")(app);
 const readline = require('readline');
 const natpmp = require('nat-pmp');
 const path = require('path');
-require('dotenv').config();
+require('dotenv').config({path:path.resolve(__dirname, ".env")});
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -105,6 +105,7 @@ app.ws("/", (ws, req) => {
 var server = app.listen(port.internal, function () {
   port.internal = server.address().port;
   console.log('Express server listening on port ' + port.internal);
+  console.log("Config address: ", "http://localhost:" + port.internal + "/config/");
 });
 
 
@@ -135,7 +136,6 @@ if (port.external != "none") {
       port.external = info.external;
       console.log(info);
       console.log("Full external address: ", "http://" + ExternalData.ip + ":" + port.external);
-      console.log("Config address: ", "http://localhost:" + port.internal + "/config/");
     });
   }
   setInterval(PortMap, 900 * 1000);
